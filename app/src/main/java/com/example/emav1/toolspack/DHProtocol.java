@@ -1,8 +1,5 @@
 package com.example.emav1.toolspack;
-import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.Date;
-import java.util.Random;
 
 public class DHProtocol {
 
@@ -47,18 +44,8 @@ public class DHProtocol {
     public BigInteger getCipherKey() {
         return this.CIPHER_KEY;
     }
-    //TEST VARIABLE ONLY. TO-DO: REMOVE AFTER HANDSHAKE PROTOCOL IS ACCOMPLISHED.
+    //TEST VARIABLE ONLY. TODO: REMOVE AFTER HANDSHAKE PROTOCOL IS ACCOMPLISHED.
     public BigInteger getPublicKey() {
         return this.PUBLIC_KEY;
-    }
-
-    /*
-    public BigInteger getReceivedPublicKey() {
-        return this.RECEIVED_PUBLIC_KEY;
-    }
-
-     */
-    public int getPrivateKey() {
-        return this.PRIVATE_KEY;
     }
 }

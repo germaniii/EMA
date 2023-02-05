@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".FragmentTextMessage">
-
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
     <ImageView
         android:id="@+id/textMessage_MessageSign"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp"
-        android:contentDescription="image only"
+        android:contentDescription="@android:string/defaultVoiceMailAlphaTag"
         android:cropToPadding="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +26,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="100"
         android:paddingTop="15dp">
 
         <LinearLayout
@@ -39,64 +34,59 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
-            android:weightSum="100"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="85">
+                android:layout_height="24dp">
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="To:"
-                    android:textSize="16dp" />
+                    android:textSize="16sp" />
 
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="15">
-
+                android:layout_height="wrap_content">
                 <Spinner
                     android:id="@+id/textMessage_Spinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
                     android:padding="10dp" />
-
             </RelativeLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:weightSum="5">
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/textMessage_message"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="25dp"
                 android:layout_marginBottom="15dp"
-                android:layout_weight="4"
                 android:background="@color/white"
                 android:ems="10"
                 android:hint="Enter message..."
                 android:inputType="textMultiLine"
                 android:minLines="6"
                 android:maxLength="239"
-                android:textColorHint="#979797"
-                android:textSize="14dp" />
+                android:textColorHint="#575757"
+                android:textSize="16sp" />
 
             <ImageButton
                 android:id="@+id/textMessage_sendButton"
+                android:contentDescription="@android:string/defaultMsisdnAlphaTag"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="25dp"
@@ -105,14 +95,8 @@
                 android:layout_gravity="right"
                 android:background="#00C8E6C9"
                 android:onClick="onClickSendButton"
-                android:scaleType="fitCenter"
                 app:srcCompat="@drawable/ico_sendbutton"
-                app:tint="@color/night_blue"
-                android:layout_weight="1"/>
-        </LinearLayout>
-
-
+                app:tint="@color/night_blue"/>
         </LinearLayout>
     </LinearLayout>
-
-</FrameLayout>
+</LinearLayout>

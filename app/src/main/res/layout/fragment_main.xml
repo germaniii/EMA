@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FragmentMain">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
     <!-- TODO: Update blank fragment layout -->
         <ImageView
             android:id="@+id/main_MessageSign"
@@ -18,27 +13,19 @@
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
-            android:contentDescription="image only"
+            android:contentDescription="@android:string/defaultVoiceMailAlphaTag"
             android:cropToPadding="false"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/divider"
             app:srcCompat="@drawable/ico_inbox"
             app:tint="@color/brown" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/main_inboxList"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="15dp"
-            android:background="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/main_MessageSign" />
-
-    </LinearLayout>
-
-</FrameLayout>
+            android:background="@color/white"/>
+</LinearLayout>

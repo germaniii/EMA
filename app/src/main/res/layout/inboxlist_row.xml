@@ -1,63 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
     android:orientation="vertical"
     android:padding="10dp">
-
     <LinearLayout
+        android:baselineAligned="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="100">
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="50">
-
             <TextView
                 android:id="@+id/inboxName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="50"
                 android:textColor="@color/brown"
-                android:textSize="16dp" />
-
+                android:textSize="16sp" />
         </RelativeLayout>
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="50">
-
             <TextView
                 android:id="@+id/inboxNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="50"
                 android:gravity="end"
                 android:textColor="@color/brown"
-                android:textSize="14dp" />
-
+                android:textSize="14sp" />
         </RelativeLayout>
     </LinearLayout>
-
-
     <LinearLayout
+        android:baselineAligned="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="100">
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="50">
-
             <TextView
                 android:id="@+id/inboxMessage"
                 style="@style/autoscroll"
@@ -66,7 +53,8 @@
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:textColor="@color/bluegreen"
-                android:textSize="14dp"/>
+                android:contentDescription="@android:string/defaultMsisdnAlphaTag"
+                android:textSize="14sp"/>
 
         </RelativeLayout>
         <RelativeLayout
@@ -80,17 +68,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="end"
                 android:textColor="@color/gray1"
-                android:textSize="14dp" />
+                android:textSize="14sp" />
         </RelativeLayout>
     </LinearLayout>
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="447dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/bluegreen"/>
-
-
-
 </LinearLayout>

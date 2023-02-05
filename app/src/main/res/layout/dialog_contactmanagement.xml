@@ -14,7 +14,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginRight="4dp"
         android:layout_marginBottom="4dp"
-        android:hint="Name"
+        android:hint="@android:string/unknownName"
         android:inputType="text" />
 
     <EditText
@@ -25,17 +25,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginRight="4dp"
         android:layout_marginBottom="4dp"
-        android:hint="Number"
+        android:hint="@android:string/emptyPhoneNumber"
         android:inputType="number"
         android:maxLength="11" />
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal"
-        android:textSize="14dp" />
-
 </LinearLayout>

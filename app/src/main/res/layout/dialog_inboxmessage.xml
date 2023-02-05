@@ -7,11 +7,12 @@
     android:padding="20dp">
 
     <LinearLayout
+        android:baselineAligned="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
-        android:textSize="14dp"
+        android:textSize="14sp"
         android:weightSum="100">
 
         <RelativeLayout
@@ -27,10 +28,8 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_marginBottom="4dp"
-                android:layout_weight="50"
-                android:hint="Name"
-                android:inputType="text"
-                android:textSize="16dp"
+                android:hint="@android:string/unknownName"
+                android:textSize="16sp"
                 android:textColor="@color/brown"/>
 
         </RelativeLayout>
@@ -48,12 +47,11 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_marginBottom="4dp"
-                android:layout_weight="50"
-                android:hint="Number"
+                android:hint="@android:string/emptyPhoneNumber"
                 android:maxLength="11"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:textColor="@color/brown"
-                android:textAlignment="textEnd"/>
+                android:gravity="end"/>
 
         </RelativeLayout>
 
@@ -75,18 +73,19 @@
         android:layout_marginTop="16dp"
         android:layout_marginRight="4dp"
         android:layout_marginBottom="4dp"
-        android:hint="Message"
+        android:hint="@android:string/defaultVoiceMailAlphaTag"
         android:scrollbars="vertical"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:textColor="@color/night_blue"
         android:textIsSelectable="true"/>
 
     <LinearLayout
+        android:baselineAligned="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
-        android:textSize="14dp"
+        android:textSize="14sp"
         android:weightSum="100">
 
         <RelativeLayout
@@ -95,15 +94,14 @@
             android:layout_weight="50">
 
         <TextView
-            android:id="@+id/dialog_mname"
+            android:id="@+id/noname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:layout_marginRight="4dp"
             android:layout_marginBottom="4dp"
-            android:layout_weight="50"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         </RelativeLayout>
 
@@ -120,11 +118,10 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_marginBottom="4dp"
-                android:layout_weight="50"
-                android:hint="Date"
-                android:textAlignment="textEnd"
+                android:hint="@android:string/defaultMsisdnAlphaTag"
+                android:gravity="end"
                 android:textColor="@color/bluegreen"
-                android:textSize="14dp" />
+                android:textSize="14sp" />
 
         </RelativeLayout>
 
